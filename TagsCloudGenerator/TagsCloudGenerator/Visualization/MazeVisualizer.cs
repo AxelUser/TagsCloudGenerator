@@ -1,0 +1,24 @@
+﻿using System.Drawing;
+using TagsCloudGenerator.Layouters;
+
+namespace TagsCloudGenerator.Visualization
+{
+    public static class MazeVisualizer
+    {
+        public static Bitmap GetImage(CircularCloudLayouter layouter)
+        {
+            var bitmap = new Bitmap(layouter.Maze.Width, layouter.Maze.Height);
+
+            using (var graphics = Graphics.FromImage(bitmap))
+            {
+                graphics.FillRectangle(Brushes.Azure, layouter.Maze);
+                foreach (var rectangle in layouter.NormalizedRectangles)
+                {
+                    graphics.FillRectangle(Brushes.DarkGoldenrod, rectangle);
+                    graphics.DrawRectangle(Pens.LightSalmon, rectangle);
+                }
+            }
+            return bitmap;
+        }
+    }
+}
