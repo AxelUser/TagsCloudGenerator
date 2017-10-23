@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TagsCloudGenerator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("SKB Kontur")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TagsCloudGenerator")]
-[assembly: AssemblyCopyright("Copyright © SKB Kontur 2017")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
